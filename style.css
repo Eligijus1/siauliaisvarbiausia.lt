@@ -3,7 +3,7 @@
   --cream: #F5EEE6;
   --blue: #344999;
   --navy: #182C59;
-  --teal: #13A39A;
+  --teal: #00A59B; /* oficiali logotipo spalva */
   --yellow: #F2BC1B;
   --ink: #111418;
 }
@@ -43,15 +43,10 @@ body {
   box-shadow: 0 20px 60px rgba(0, 0, 0, .35);
 }
 
-.wordmark {
-  display: inline-flex;
-  flex-direction: column;
-  font-weight: 800;
-  font-size: 22px;
-  line-height: 1;
-  color: var(--blue);
-  border-left: 4px solid var(--teal);
-  padding-left: 8px;
+.logo {
+  display: block;
+  width: 88px;
+  height: auto;
   margin-bottom: 28px;
 }
 
