@@ -178,10 +178,20 @@ section { padding: 72px 0; }
 
 /* Komanda */
 .team { background: #fff; }
-.people { list-style: none; display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.people { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px 24px; align-items: start; }
 .person img { width: 100%; aspect-ratio: 1; object-fit: cover; background: var(--grey); border-bottom: 5px solid var(--teal); }
 .person-name { font-weight: 800; font-size: 20px; line-height: 1.2; margin-top: 12px; color: var(--navy); }
 .person-role { font-size: 15px; color: var(--muted); }
+.person-more { margin-top: 10px; font-size: 16px; line-height: 1.45; }
+.person-more summary {
+  cursor: pointer; display: inline-block;
+  font-weight: 800; color: var(--blue); padding: 4px 0;
+}
+.person-more summary::marker { color: var(--teal); }
+.person-more[open] summary { margin-bottom: 8px; }
+.person-more ul { padding-left: 18px; display: grid; gap: 6px; }
+.person-more blockquote { margin-top: 10px; padding-left: 12px; border-left: 4px solid var(--yellow); font-style: italic; }
+.person-more p { margin-top: 8px; font-weight: 700; }
 .person-soon .soon-num {
   display: grid; place-items: center; aspect-ratio: 1;
   background: var(--grey); border: 3px dashed var(--blue); border-bottom-width: 5px;
@@ -217,7 +227,8 @@ section { padding: 72px 0; }
   .work h3 { font-size: 21px; }
   .mayor-in { flex-direction: column; align-items: flex-start; gap: 32px; }
   .mayor-photo img { width: 180px; }
-  .people { gap: 16px; }
+  .people { grid-template-columns: 1fr; gap: 32px; }
+  .person img, .person-soon .soon-num { max-width: 320px; }
   .s1 { width: 260px; height: 160px; top: -90px; right: -110px; }
 }
 
