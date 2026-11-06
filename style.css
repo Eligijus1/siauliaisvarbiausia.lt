@@ -73,7 +73,10 @@ nav a:hover { background: var(--grey); color: var(--blue); }
 .kicker { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--teal); }
 .hero .kicker { color: var(--yellow); }
 
+.hero-h1 { font-size: inherit; font-weight: inherit; }
+.hero-h1 .kicker { display: block; }
 .kada {
+  display: block;
   font-size: clamp(88px, 21vw, 220px);
   font-weight: 900; font-stretch: 75%;
   line-height: .86; letter-spacing: -.02em;
