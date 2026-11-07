@@ -185,6 +185,7 @@ section { padding: 72px 0; }
 .person img { width: 100%; aspect-ratio: 1; object-fit: cover; background: var(--grey); border-bottom: 5px solid var(--teal); }
 .person-name { font-weight: 800; font-size: 20px; line-height: 1.2; margin-top: 12px; color: var(--navy); }
 .person-role { font-size: 15px; color: var(--muted); }
+.person-nofoto img { object-fit: contain; padding: 22%; }
 .person-more { margin-top: 10px; font-size: 16px; line-height: 1.45; }
 .person-more summary {
   cursor: pointer; display: inline-block;
@@ -230,8 +231,10 @@ section { padding: 72px 0; }
   .work h3 { font-size: 21px; }
   .mayor-in { flex-direction: column; align-items: flex-start; gap: 32px; }
   .mayor-photo img { width: 180px; }
-  .people { grid-template-columns: 1fr; gap: 32px; }
-  .person img, .person-soon .soon-num { max-width: 320px; }
+  .people { grid-template-columns: repeat(2, 1fr); gap: 24px 14px; }
+  .person-name { font-size: 17px; }
+  .person-role { font-size: 14px; }
+  .person-more { font-size: 15px; }
   .s1 { width: 260px; height: 160px; top: -90px; right: -110px; }
 }
 
