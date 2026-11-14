@@ -253,3 +253,65 @@ section { padding: 72px 0; }
 .work-more h4 { font-size: 14px; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; color: var(--navy); margin: 12px 0 4px; }
 .work-more ul { padding-left: 18px; display: grid; gap: 4px; }
 .work-more p { margin: 0; }
+
+/* Darbų puslapiai (2026-11-14) */
+.work-link { align-self: flex-start; font-weight: 800; color: var(--blue); text-decoration: none; border-bottom: 2px solid var(--teal); padding-bottom: 2px; }
+.work-link:hover { color: var(--navy); border-bottom-color: var(--yellow); }
+
+.wp-hero { position: relative; overflow: hidden; background: var(--navy); color: var(--cream); padding: 40px 0 64px; }
+.wp-hero-in { position: relative; }
+.wp-back { display: inline-block; color: var(--cream); font-weight: 700; text-decoration: none; margin-bottom: 26px; border-bottom: 2px solid var(--teal); }
+.wp-back:hover { color: var(--yellow); }
+.wp-hero .kicker { color: var(--yellow); }
+.wp-title { display: flex; align-items: flex-start; gap: 18px; font-size: clamp(34px, 5.4vw, 60px); font-weight: 900; font-stretch: 80%; line-height: 1.02; text-transform: uppercase; margin: 12px 0 28px; max-width: 22ch; }
+.wp-no { flex: none; display: grid; place-items: center; width: 1.25em; height: 1.25em; background: var(--yellow); color: var(--navy); font-size: .9em; }
+.wp-stamp { color: var(--yellow) !important; border-color: var(--yellow); background: transparent; }
+
+.wp-body { background: #fff; }
+.wp-grid { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 48px; align-items: start; }
+.wp-lead { font-size: 20px; line-height: 1.5; margin-bottom: 16px; max-width: 62ch; }
+.wp-lead:first-child { font-weight: 600; color: var(--navy); }
+.wp-h { font-size: 22px; font-weight: 900; text-transform: uppercase; font-stretch: 85%; color: var(--navy); margin: 34px 0 12px; padding-top: 14px; border-top: 4px solid var(--teal); display: inline-block; }
+.wp-main > p:not(.wp-lead) { max-width: 62ch; }
+.wp-list { padding-left: 22px; display: grid; gap: 8px; max-width: 62ch; }
+.wp-list li::marker { color: var(--teal); }
+
+.wp-share { position: sticky; top: 96px; background: var(--cream); padding: 22px; border-top: 6px solid var(--yellow); }
+.wp-share-h { font-weight: 900; text-transform: uppercase; color: var(--navy); margin-bottom: 12px; }
+.share-row { display: grid; gap: 8px; }
+.share { display: block; width: 100%; text-align: left; font: inherit; font-weight: 800; font-size: 16px; text-decoration: none; padding: 10px 14px; border: 0; cursor: pointer; background: var(--navy); color: #fff; }
+.share:hover { transform: translate(-1px, -1px); box-shadow: 3px 3px 0 var(--yellow); }
+.share-facebook { background: #1877F2; }
+.share-whatsapp { background: #128C4B; }
+.share-x { background: #111418; }
+.share-linkedin { background: #0A66C2; }
+.share-el-paštu { background: var(--blue); }
+.share-copy, .share-native { background: #fff; color: var(--navy); outline: 2px solid var(--navy); outline-offset: -2px; }
+.wp-share-note { font-size: 15px; color: var(--muted); margin-top: 12px; }
+
+.wp-pn { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; padding-top: 36px; padding-bottom: 8px; }
+.wp-pn a { display: block; background: #fff; padding: 16px 18px; text-decoration: none; color: var(--navy); font-weight: 800; border-bottom: 4px solid var(--blue); }
+.wp-pn a:hover { border-bottom-color: var(--yellow); }
+.wp-pn small { display: block; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--teal); }
+.wp-next { text-align: right; }
+.wp-cta { padding: 36px 0 64px; }
+.wp-cta .wrap { display: flex; flex-wrap: wrap; gap: 18px; }
+.btn-ghost-dark { background: transparent; color: var(--navy); border: 2px solid var(--navy); box-shadow: none; }
+.btn-ghost-dark:hover { box-shadow: 6px 6px 0 var(--teal); }
+
+@media (max-width: 900px) {
+  .wp-grid { grid-template-columns: 1fr; }
+  .wp-share { position: static; }
+  .share-row { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 640px) {
+  .wp-pn { grid-template-columns: 1fr; }
+  .wp-next { text-align: left; }
+  .wp-lead { font-size: 18px; }
+}
+.wp-hero .s2 { bottom: -95px; right: 6%; }
+@media (max-width: 640px) {
+  nav a[href="../#merui"] { display: none; }
+  .wp-hero .s2 { display: none; }
+  .wp-title { gap: 12px; }
+}
