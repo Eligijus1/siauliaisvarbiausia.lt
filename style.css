@@ -315,3 +315,11 @@ section { padding: 72px 0; }
   .wp-hero .s2 { display: none; }
   .wp-title { gap: 12px; }
 }
+
+/* Viršaus klausimai — nuorodos į darbus (2026-11-14) */
+.questions li { padding: 0; }
+.questions a { display: block; padding: 8px 14px; color: inherit; text-decoration: none; }
+.questions a::after { content: " ↓"; color: var(--teal); }
+.questions li:hover { transform: rotate(0) translateY(-2px); box-shadow: 4px 4px 0 var(--teal); }
+.work { scroll-margin-top: 96px; }
+.work:target { outline: 4px solid var(--yellow); outline-offset: 4px; }
